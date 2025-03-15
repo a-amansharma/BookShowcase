@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>The Psychology of Money</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+
+        body {
+            margin-left: 20%;
+            margin-right: 20%;
+            background: linear-gradient(45deg, rgb(255, 112, 112), rgb(255, 206, 115), rgb(128, 128, 251), rgb(222, 255, 149));
+            animation: body 15s ease-in-out infinite;
+            background-size: 300%;
+            height: auto;
+            margin-bottom: 100px;
+        }
+        @keyframes body {
+            0% {
+                background-position: 0 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0 50%;
+            }
+        }
+        .page-body {
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        header {
+            background-color: rgb(65, 64, 64);
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        header h1 {
+            width: 100%;
+            padding: 30px;
+        }
+
+        img {
+            width: 100%;
+            padding: 30px;
+            border-radius: 40px;
+        }
+
+        .desc {
+            margin-left: 30px;
+            font-size: 1.3rem;
+            font-weight: bolder;
+            margin-bottom: 40px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .author {
+            font-size: 1.5rem;
+            color: rgb(255, 149, 0);
+        }
+
+        form {
+            border: none;
+            background-color: rgb(243, 243, 243);
+            border-radius: 10px;
+            padding: 20px;
+            width: 500px;
+            margin-bottom: 100px;
+            box-shadow: 0 0 20px lightgray;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            border-radius: 5px;
+            border: none;
+        }
+
+        label {
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 10px;
+
+        }
+
+        .feedback {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .all-container {
+            margin-left: 20px;
+            margin-right: 20px;
+            font-size: 1.5rem;
+        }
+
+        details {
+            border: 1px solid lightgrey;
+            border-radius: 5px;
+            font-size: 1rem;
+            margin: 8px;
+            width: 70%;
+            color: black;
+            transition: 0.9s;
+            
+        }
+
+        details:hover {
+            box-shadow: 0 0 10px rgb(190, 183, 243);
+            transform: scale(1.02);
+            transition: 0.4s;
+        }
+
+        summary {
+            padding: 5px 10px;
+            font-size: 1.1rem;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .para,
+        a {
+            padding: 10px;
+        }
+
+        .head{
+            background-color: rgb(30, 29, 29);
+            color: white;
+            font-size: 1.3rem;
+            margin-top: 100px;
+            display: flex;
+            padding: 20px;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: bolder;
+        }
+
+        @media (max-width : 700px) {
+            header h1 {
+            width: 100%;
+            padding: 20px;
+            font-size: 0.8rem;
+        }
+
+            .name {
+                font-size: 1.2rem;
+            }
+
+            img {
+                padding: 10px;
+                border-radius: 20px;
+            }
+
+            .desc {
+                font-size: 1rem;
+                margin: 0px;
+                margin-left: 20px;
+                margin-right: 20px;
+                margin-bottom: 20px;
+            }
+
+            .author {
+                font-size: 1rem;
+            }
+
+            summary {
+                font-size: 0.8rem;
+            }
+
+            details {
+                font-size: 0.9rem;
+                width: 80%;
+            }
+
+            .all-container {
+                margin-left: 10px;
+                margin-right: 10px;
+                font-size: 1rem;
+                
+            }
+            .feedback{
+                margin-top: 10px;
+            }
+            form{
+                margin: 10px;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                border: 1px dashed lightgrey;
+                box-shadow: none;
+                background-color: rgb(238, 238, 238);
+            }
+            input, textarea{
+                border-radius: 2px;
+            }
+            body{
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+            .head{
+                font-size: 0.8rem;
+            }
+           
+        }
+        .sub-head{
+            text-align: end;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-body">
+        <header>
+            <h1>Book Details : <span class="name">The Psychology of Money</span></h1>
+        </header>
+        <aside class="sub-head">
+            <span><a href="index.html">Home</a>
+            </span>
+        </aside>
+        <div class="top">
+            <img src="files/inner-pshyco.png" alt="">
+            <p class="desc">The Psychology of Money is a book that explores how people think about money, make financial decisions, and develop wealth-building habits. <span
+                    class="author"> by Morgan Housel</span></p>
+        </div>
+        <div class="all-container">
+            <details>
+                <summary>Genre</summary>
+                <ul>
+                    <li>Personal</li>
+                    <li>Psychology</li>
+                    <li>Finance</li>
+                    <li>Self-Help</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Index Page</summary>
+                <ul>
+                    <li>Introduction</li>
+                    <li>Chapter 1 : Overview</li>
+                    <li>Chapter 2 : Advanced Concepts</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Authors</summary>
+                <p class="para">Morgan Housel</p>
+            </details>
+
+            <details>
+                <summary>Overview</summary>
+                <p class="para"> It emphasizes that financial success is more about behavior and mindset than technical knowledge. Through engaging stories and simple yet profound insights, Housel highlights how emotions, biases, and personal experiences shape our financial choices.</p>
+            </details>
+
+            <details>
+                <summary>Book for Recommendation</summary>
+                <p class="para">
+                    ✅ Students & Professionals – To enhance focus, confidence, and success. <br>
+                    ✅ Entrepreneurs & Business Leaders – To develop a positive mindset and attract success. <br>
+                    ✅ People Seeking Self-Improvement – To overcome fears, build habits, and achieve goals. <br>
+                    ✅ Those Interested in Spiritual & Psychological Growth – To understand the mind’s power in shaping reality.
+                </p>
+            </details>
+            <details>
+                <summary>Purchase Links</summary>
+                <a
+                    href="https://www.amazon.in/Psychology-Money-Morgan-Housel/dp/9390166268?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1WYWER0W24N8S">Amazon</a>
+                - ₹285/-<br>
+                <a
+                    href="https://www.flipkart.com/psychology-money-time-lessons-wealth-greed-happiness/p/itm37e3b5ac4740b?pid=9781467629140&lid=LSTBOK9781467629140KRLFFP&marketplace=FLIPKART&cmpid=content_book_8965229628_gmc">FlipKart</a>
+                - ₹231/- <br>
+            </details>
+
+            <hr>
+            Feedback Form :- 
+            <div class="feedback">
+                <form action="">
+                    <label for="">Name</label> <br>
+                    <input type="text" name="" id=""> <br>
+                    <label for="">Feedback</label> <br>
+                    <textarea name="" id=""></textarea> <br>
+                    <button class="btn btn-primary">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="head">
+        <footer>
+            <p>&copy; 2025 Book Showcase | All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+
+</html>
