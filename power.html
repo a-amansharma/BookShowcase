@@ -73,23 +73,25 @@
 
         form {
             border: none;
-            background-color: rgb(243, 243, 243);
             border-radius: 10px;
             padding: 20px;
             width: 500px;
             margin-bottom: 100px;
-            box-shadow: 0 0 20px lightgray;
         }
-
         input,
         textarea {
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
             width: 100%;
+            padding: 10px;
             border-radius: 5px;
-            border: none;
+            border: 3px solid lightgray;
         }
-
-        label {
-            margin-top: 10px;
+        input{
+            margin-bottom: 10px;
+            height: 40px;
+        }
+        textarea{
+            height: 80px;
         }
 
         button {
@@ -205,17 +207,7 @@
             .feedback{
                 margin-top: 10px;
             }
-            form{
-                margin: 10px;
-                margin-bottom: 30px;
-                border-radius: 5px;
-                border: 1px dashed lightgrey;
-                box-shadow: none;
-                background-color: rgb(238, 238, 238);
-            }
-            input, textarea{
-                border-radius: 2px;
-            }
+ 
             body{
                 margin-left: 20px;
                 margin-right: 20px;
@@ -305,10 +297,10 @@
             Feedback Form :- 
             <div class="feedback">
                 <form action="">
-                    <label for="">Name</label> <br>
-                    <input type="text" name="" id=""> <br>
-                    <label for="">Feedback</label> <br>
-                    <textarea name="" id=""></textarea> <br>
+                    <!-- <label for="">Name</label> <br> -->
+                    <input type="text" name="" id="" placeholder="Name"> <br>
+                    <!-- <label for="">Feedback</label> <br> -->
+                    <textarea name="" id="" placeholder="Feedback"></textarea> <br>
                     <button class="btn btn-primary">Submit Feedback</button>
                 </form>
             </div>
